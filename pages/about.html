@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Monda&family=Tenor+Sans&display=swap");
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Monda", sans-serif;
+            background-color: black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100vh;
+            gap: 1rem;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .description-box {
+            height: 100%;
+            width: 55%;
+            margin-top: 3rem;
+        }
+
+        .text-content {
+            margin: 1rem;
+            font-size: 17px;
+            color: white;
+            font-weight: normal;
+        }
+
+        .photograph-box {
+            margin-top: 10%;
+            height: fit-content;
+            width: 40%;
+        }
+
+
+        .profile-pic {
+            height: 100%;
+            width: 50%;
+            border: 2px solid rgb(92, 92, 92);
+            border-radius: 10%;
+        }
+
+        .photograph-box:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        @media(max-width:1050px) {
+
+            /*agar kam hua 1050 se toh this will be applied*/
+            .text-content {
+                font-size: 14.5px;
+            }
+        }
+
+        @media (max-width: 920px) {
+            .flex-container {
+                flex-direction: row;
+            }
+
+            .photograph-box {
+                width: 100%;
+                height: fit-content;
+
+            }
+
+            .profile-pic {
+                height: 70%;
+                width: 60%;
+            }
+
+            .description-box {
+                width: 100%;
+                height: fit-content;
+
+            }
+
+            .text-content {
+                font-size: 23px;
+            }
+        }
+
+        @media (max-width:750px) {
+            .profile-pic {
+                height: 65%;
+                width: 45%;
+                margin: 6px;
+            }
+
+            .text-content {
+                font-size: 17px;
+            }
+
+        }
+
+
+        @media (max-width:500px) {
+            .profile-pic {
+                width: 65%;
+                height: 50%;
+
+            }
+
+            .text-content {
+                font-size: 13px;
+                line-height: 2.2;
+            }
+
+
+        }
+
+        @media (max-width:390px) {
+            .profile-pic {
+                width: 40%;
+                height: 30%;
+            }
+
+            .text-content {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="photograph-box">
+            <img class="profile-pic" src="../images/personal-image.png" alt="profile-pic">
+        </div>
+        <div class="description-box">
+            <h5 class="text-content">
+                <p> Greetings! </p>
+                <p>I am a 19 year old college student currently studying my TYBSC(CS) degree at D.G. Ruparel College of
+                    Arts, Commerce, and Science. My educational journey began at the Children's Academy, where I
+                    completed my schooling with an impressive 88% in the 10th grade.</p>
+                <p> I went on to study at Thakur College of Science,Commerce and Arts where I scored 78%
+                    in class 12. Education has been the cornerstone of my life and I am dedicated to my studies and
+                    personal growth in the field of Computer Science.</p>
+                <p> I am a passionate and inquisitive soul driven by an unquenchable thirst for knowledge and a love of
+                    language.
+                </p>
+                <p>
+                    I am a determined individual with a passion for achieving my goals. I approach challenges with a
+                    positive mindset and an unwavering drive to overcome them. Creativity runs through my veins and I
+                    find joy in expressing myself through various forms of art. Whether it's writing, painting or
+                    listening music, I'm always looking for ways to let my imagination run wild.
+                </p>
+                <p> Empathy and kindness are at the core of who I am, and I believe in the power to uplift others and
+                    make a positive impact on the world, leaving a trail of joy, inspiration, and authenticity wherever
+                    I go. I am a lifelong learner, constantly seeking new knowledge and experiences to broaden my
+                    horizons. </p>
+                <p> With an adventurous spirit and a love of discovery. I embrace the unknown and see every
+                    day as an opportunity to grow.
+                </p>
+                <p> Let's embark on this adventure together, make every moment count and create a meaningful impact on
+                    our shared human experience.</p>
+
+            </h5>
+        </div>
+    </div>
+</body>
+
+</html>
