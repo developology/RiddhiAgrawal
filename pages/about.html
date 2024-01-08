@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Monda&family=Tenor+Sans&display=swap");
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Monda", sans-serif;
+            background-color: black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100vh;
+            gap: 1rem;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .description-box {
+            height: 100%;
+            width: 55%;
+            margin-top: 3rem;
+        }
+
+        .text-content {
+            margin: 1rem;
+            font-size: 15.5px;
+            color: white;
+            font-weight: normal;
+            line-height: 2;
+        }
+
+        .photograph-box {
+            margin-top: 10%;
+            height: fit-content;
+            width: 40%;
+        }
+
+
+        .profile-pic {
+            height: 100%;
+            width: 50%;
+            border: 2px solid rgb(92, 92, 92);
+            border-radius: 10%;
+        }
+
+        .photograph-box:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        @media(max-width:1050px) {
+
+            /*agar kam hua 1050 se toh this will be applied*/
+            .text-content {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 920px) {
+            .flex-container {
+                flex-direction: row;
+            }
+
+            .photograph-box {
+                width: 100%;
+                height: fit-content;
+
+            }
+
+            .profile-pic {
+                height: 70%;
+                width: 60%;
+            }
+
+            .description-box {
+                width: 100%;
+                height: fit-content;
+
+            }
+
+            .text-content {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width:750px) {
+            .profile-pic {
+                height: 65%;
+                width: 45%;
+                margin: 6px;
+            }
+
+            .text-content {
+                font-size: 13px;
+                line-height: 1.7;
+            }
+        }
+
+
+        @media (max-width:500px) {
+            .profile-pic {
+                width: 65%;
+                height: 50%;
+
+            }
+
+            .text-content {
+                font-size: 12px;
+                line-height: 2.2;
+            }
+        }
+
+        @media (max-width:390px) {
+            .profile-pic {
+                width: 40%;
+                height: 30%;
+            }
+
+            .text-content {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="photograph-box">
+            <img class="profile-pic" src="../images/personal-image.png" alt="profile-pic">
+        </div>
+        <div class="description-box">
+            <h5 class="text-content">
+                <p>Greetings! </p>
+
+                <p>I'm a 19-year-old college student, currently diving into the world of Computer Science at D.G.
+                    Ruparel College of Arts, Commerce, and Science. My educational journey began at Children's Academy,
+                    where I performed well academically. </p>
+
+                <p> Transitioning to Thakur College of Science, Commerce, and Arts, I continued my quest for knowledge.
+                    Computer science is my passion, and I approach my studies with great
+                    enthusiasm.
+                </p>
+
+                <p> Beyond academics, I'm a curious and creative individual who loves expressing myself through writing,
+                    painting, and music. Challenges don't faze me – I tackle them with a positive mindset until I
+                    conquer them. </p>
+
+                <p> Empathy and kindness are my guiding principles. I strive to spread joy and make a positive impact
+                    wherever I go. Learning is a lifelong journey, and I'm always eager to explore new things and gain
+                    fresh experiences..</p>
+
+                <p> In the realm of web development, I've had two significant experiences. The first was a remote
+                    internship with a Pune-based company, offering a deep dive into the world of developers. The second
+                    involved freelancing/full-time work with a company in Odisha, providing insights into corporate life
+                    over a span of 2-3 weeks.</p>
+
+                <p> I'm an adventurous soul, always excited to explore the unknown and view each day as an opportunity
+                    for growth.</p>
+
+                <p> Let's go on this exciting journey together, making the most of every moment and creating meaningful
+                    connections in our shared human experience. </p>
+
+            </h5>
+        </div>
+    </div>
+</body>
+
+</html>
