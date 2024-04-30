@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, white, black, black);
+            animation: moveGradient 1s linear infinite alternate;
+            color: #333;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        @keyframes moveGradient {
+            0% {
+                background-position: 0% 30%;
+            }
+
+            100% {
+                background-position: 70% 30%;
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255);
+        }
+
+        .mandatory {
+            color: #333;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="751be923-ce2c-47d1-b25e-7676e002a436">
+            <label for="fullname" class="mandatory">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br>
+            <label for="phone" class="mandatory">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="mail" class="mandatory">E-mail:</label><br>
+            <input type="email" id="mail" name="mail" required><br>
+            <label for="msg" class="mandatory">Message:</label><br>
+            <textarea id="msg" name="msg" required></textarea><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <script>
+        /*function clearForm() {
+            document.getElementById("contactForm").reset();
+        }*/
+    </script>
+
+</body>
+
+</html>

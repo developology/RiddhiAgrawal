@@ -1,0 +1,245 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Monda&family=Tenor+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.title-landing-page {
+  width: 100%;
+  height: 100%;
+  font-family: "Monda", sans-serif;
+}
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+/*Navbar-Toggle*/
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 50px;
+  padding: 1em;
+  padding-top: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.last-li:hover {
+  color: rgb(105, 107, 105);
+}
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+/*Media-Query-Navbar*/
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+/*Div-1*/
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 12rem;
+}
+
+.title-logo {
+  height: 60vh;
+  width: 60vh;
+}
+/*Media-Query-Div-1*/
+
+@media (max-width: 500px) {
+  .title-logo {
+    height: 40vh;
+    width: 40vh;
+  }
+  .container {
+    padding-top: 11rem;
+  }
+}
+
+/*Div-2*/
+
+.box2 {
+  width: 100%;
+  height: 6rem;
+  justify-content: center;
+  color: rgb(255, 250, 250);
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.title-line {
+  /*padding: 1rem;*/
+  font-size: 4rem;
+}
+
+/*Media-Query-Div-2*/
+
+@media (max-width: 720px) {
+  .title-line {
+    font-size: 2rem;
+    padding: 0rem;
+  }
+
+  .box2 {
+    height: 4rem;
+  }
+}
+
+/*Footer*/
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.item {
+  height: max-content;
+  text-align: center;
+  padding: 0.8rem;
+  color: rgb(207, 206, 206);
+  font-size: 1.7rem;
+  margin: 0.4vh;
+  cursor: pointer;
+}
+.fa-instagram:hover {
+  color: #d34ae4;
+}
+.fa-github:hover {
+  color: #272727;
+}
+.fa-envelope:hover {
+  color: #c71610;
+}
+.fa-linkedin-in:hover {
+  color: #0a66c2;
+}
+/*Media-Query-Footer*/
+
+@media (max-width: 850px) {
+  .item {
+    font-size: 1.4rem;
+  }
+  .container-flex {
+    padding-top: 0;
+  }
+  .menu > li {
+    font-size: 1rem;
+  }
+  .title-line {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My certificates</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Monda&family=Tenor+Sans&display=swap");
+
+        body {
+            font-family: "Monda", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 2%;
+            font-size: 2rem;
+            color: white
+        }
+
+
+        .box {
+            margin-top: 10%;
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 30rem;
+            height: 20rem;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+        }
+
+        .flip-card:focus {
+            outline: 0;
+        }
+
+        .flip-card:hover .flip-card-inner,
+        .flip-card:focus .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .flip-card-front {
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-back {
+            background-color: rgb(18, 17, 17);
+            color: rgb(255, 255, 255);
+            transform: rotateY(180deg);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h4 {
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 3%;
+        }
+
+        .flip-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 700px) {
+            .box {
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 10%;
+                gap: 2.5rem;
+                margin-bottom: 10%;
+            }
+
+            .heading {
+                font-size: 1rem;
+            }
+
+            .flip-card {
+                margin-top: 2%;
+                height: 12rem;
+                width: 17rem;
+            }
+
+            .flip-card img {
+                height: 100%;
+                width: 100%;
+            }
+
+            h4 {
+                font-size: 0.5rem;
+                padding: 7%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>My Certificates</h1>
+        <div class="box">
+
+
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/skill-nation.png" alt="skill-nation">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p>I participated in a 3-hour workshop bootcamp focused on exploring ChatGPT prompts and the
+                                built-in features of Microsoft 365, including creating Excel sheets, Word documents,
+                                PDFs, and more.
+                            </p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/bootcamp-twd_page-0001.jpg" alt="TWD-bootcamp">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p>I attended an one-day bootcamp on YouTube led by Nabendu Biswas. </p>
+                            The session was
+                            filled with valuable insights and hands-on learning, leaving a positive impact on my
+                            personal and professional growth.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/Devtown Certi_page-0001.jpg" alt="devtown-bootcamp">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p>Successfully completed a 7-day web development bootcamp initiated by Saurabh Sinha from
+                                DevTown on YouTube. </p> Explored and learned about various exciting features and
+                            functionalities, enhancing my skills in web development.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/Google Certi_page-0001.jpg" alt="Google-certificate">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p> A Google-certified certificate has been achieved, signifying the successful completion
+                                of a
+                                specific program.</p>
+                            <p> This official recognition validates the skills and knowledge
+                                acquired in
+                                the respective domain, showcasing the achievement in the program. </p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/Microsoft Certi_page-0001.jpg" alt="Microsoft-certi">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p> A Microsoft-certified certificate has been achieved, signifying the successful
+                                completion
+                                of a
+                                specific program.</p>
+                            <p> This official recognition validates the skills and knowledge
+                                acquired in
+                                the respective domain, showcasing the achievement in the program. </p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/HTML,CSS_page-0001.jpg" alt="html,css-certi">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p>
+                                Successfully completed a 5-day bootcamp of HTML,CSS program on Lets'Upgrade via YouTube,
+                                earning a certificate of completion.
+                            </p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/SqlCerti_page-0001.jpg" alt="SQL-certi">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4> Successfully completed a 3-day bootcamp of SQL program on Lets'Upgrade via YouTube,
+                            earning a certificate of completion.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/Lords-debate.jpg" alt="debate">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Participated in Finco's inter-college debate competition during my first year of college.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/devtown_participate_page-0001.jpg" alt="devtown_participate_page-0001">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>
+                            <p>DevTown's appreciation certificate, received halfway through the bootcamp, provided
+                                immense
+                                motivation to pursue more knowledge and complete the program. </p>
+                            <p>The encouragement inspired
+                                me
+                                to strive for greater achievements in web development. </p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/narcotics.jpg" alt="narcotics-certi">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>During my first year, I was part of the National Service Scheme (NSS) and received a NoDrugs
+                            Narcotics certificate.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../images/ppt_national.png" alt="ppt-certi">
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Participated in a national-level PPT competition during my first year amidst the partial
+                            lockdown phase.</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more flip cards here if needed -->
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

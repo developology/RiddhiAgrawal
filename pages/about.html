@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Monda&family=Tenor+Sans&display=swap");
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Monda", sans-serif;
+            background-color: black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100vh;
+            gap: 1rem;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .description-box {
+            height: 100%;
+            width: 55%;
+            margin-top: 3rem;
+        }
+
+        .text-content {
+            margin: 1rem;
+            font-size: 15.5px;
+            color: white;
+            font-weight: normal;
+            line-height: 2;
+        }
+
+        .photograph-box {
+            margin-top: 10%;
+            height: fit-content;
+            width: 40%;
+        }
+
+
+        .profile-pic {
+            height: 100%;
+            width: 50%;
+            border: 2px solid rgb(92, 92, 92);
+            border-radius: 10%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .photograph-box:hover img {
+            transform: scale(1.1);
+
+        }
+
+        .languages {
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            height: 300px;
+            width: 100%;
+        }
+
+        .language-heading {
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .language-icon {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .language-icon>div {
+            margin: 2rem 1rem;
+        }
+
+        @media(max-width:1050px) {
+
+            /*agar kam hua 1050 se toh this will be applied*/
+            .text-content {
+                font-size: 11px;
+            }
+
+            .languages {
+                height: fit-content;
+            }
+        }
+
+        @media (max-width: 920px) {
+            .flex-container {
+                flex-direction: row;
+            }
+
+            .photograph-box {
+                width: 100%;
+                height: fit-content;
+
+            }
+
+            .profile-pic {
+                height: 70%;
+                width: 60%;
+            }
+
+            .description-box {
+                width: 100%;
+                height: fit-content;
+
+            }
+
+            .text-content {
+                font-size: 20px;
+            }
+
+            .languages {
+                margin-top: 39rem;
+            }
+        }
+
+        @media (max-width:770px) {
+            .profile-pic {
+                height: 65%;
+                width: 45%;
+                margin: 6px;
+            }
+
+            .flex-container {
+                height: fit-content;
+            }
+
+            .text-content {
+                font-size: 13px;
+                line-height: 1.7;
+            }
+
+            .languages {
+                height: fit-content;
+                margin-top: 2rem;
+            }
+
+            .language-icon {
+                font-size: 1.4rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .language-heading {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width:500px) {
+            .profile-pic {
+                width: 65%;
+                height: 50%;
+
+            }
+
+            .text-content {
+                font-size: 12px;
+                line-height: 2.2;
+            }
+        }
+
+        @media (max-width:390px) {
+            .profile-pic {
+                width: 40%;
+                height: 30%;
+            }
+
+            .text-content {
+                font-size: 10px;
+            }
+
+            .languages {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="photograph-box">
+            <img class="profile-pic" src="../images/Untitled design.png" alt="profile-pic">
+        </div>
+        <div class="description-box">
+            <h5 class="text-content">
+                <p>Greetings! </p>
+
+                <p>I'm a 20-year-old college student studying computer science at D.G. Ruparel College of Arts,
+                    Commerce, and Science.
+                    My school adventure began at Children's Academy, where I excelled academically. </p>
+
+
+                <p>Moving on to Thakur College of Science, Commerce, and Arts, I continued my quest for knowledge.
+                    Computer science is my love, and I tackle my studies with zeal. </p>
+                <p> Beyond academics, I'm a curious and creative person who enjoys expressing myself through writing,
+                    art, and music.
+                    Challenges do not faze me; I approach them with a positive attitude until I overcome them.
+                </p>
+
+                <p> My guiding values are kindness and empathy. Everywhere I go, I try to bring happiness and have a
+                    positive influence. Since learning is a lifetime endeavor, I'm constantly excited to experience new
+                    things and learn new things.
+                </p>
+
+                <p> In the realm of web development, I've had two significant experiences. The first was a remote
+                    internship with a Pune-based company, offering a deep dive into the world of developers. The second
+                    involved freelancing/full-time work with a company in Odisha, providing insights into corporate
+                    life.</p>
+
+
+                <p> I have a spirit of adventure, constantly eager to discover new things, and I see every day as a
+                    chance to improve.
+                </p>
+
+                <p> Let's go on this exciting journey together, making the most of every moment and creating meaningful
+                    connections in our shared human experience. </p>
+
+                <p>You can reach out to me to learn more about my background and professional experience.
+
+                <p><a href="./contact.html" style="color: white;"> Here!</a> </p>
+                </p>
+
+            </h5>
+        </div>
+    </div>
+
+    <div class="languages">
+        <div class="language-heading"> Languages and skills</div>
+        <div class="language-icon">
+            <div class="div"> <i class="fa-brands fa-html5 fa-2x"></i></div>
+            <div class="div"> <i class="fa-brands fa-css3 fa-2xl"></i></div>
+            <div class="div"><i class="fa-brands fa-js fa-2xl"></i></div>
+            <div class="div"> <i class="fa-brands fa-bootstrap fa-2xl"></i></div>
+            <div class="div"><i class="fa-brands fa-wordpress fa-2xl"></i></div>
+            <div class="div"> <i class="fa-brands fa-react fa-2xl"></i></div>
+            <div class="div"> <i class="fa-solid fa-database fa-2xl"></i></div>
+            <div class="div"> <i class="fa-solid fa-file-word fa-2xl"></i></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
